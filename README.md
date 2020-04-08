@@ -77,10 +77,10 @@ That's it!
 ## Contributing
 
 ### ToDo
-- [ x ] Build a basic working app
-- [ x ] Update Readme File
+
+- [x] Build a basic working app
+- [x] Update Readme File
 - [ ] Add more states and regions
-- [ ] 
 
 This template is open source and welcomes contributions. All contributions are subject to our [Code of Conduct](https://github.com/twilio-labs/.github/blob/master/CODE_OF_CONDUCT.md).
 
