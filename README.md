@@ -82,7 +82,7 @@ That's it!
 - [x] Update Readme File
 - [ ] Add more states and regions
 
-This template is open source and welcomes contributions. All contributions are subject to our [Code of Conduct](https://github.com/twilio-labs/.github/blob/master/CODE_OF_CONDUCT.md).
+This template is open source and welcomes contributions.
 
 [Visit the project on GitHub](https://github.com/twilio-labs/sample-template-nodejs)
 
