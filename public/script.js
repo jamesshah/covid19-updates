@@ -1,9 +1,11 @@
+require("dotenv").config();
 const fetch = require("node-fetch");
 const User = require("../models/User");
 const client = require("twilio")(process.env.ACC_SID, process.env.AUTH_TOKEN);
 const cron = require("node-cron");
 
-const tasks = cron.schedule("0 9,20 * * *", () => {
+
+const tasks = cron.schedule("30 10,23 * * *", () => {
   // get_users();
   // get_data();
   send_msg();
