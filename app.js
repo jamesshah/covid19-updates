@@ -5,6 +5,10 @@ const bodyParser = require("body-parser");
 const script = require("./public/script");
 const expressLayout = require("express-ejs-layouts");
 
+const wakeUpDyno = require('./public/wakeUpDyno');
+
+const DYNO_URL = "https://covid19updates-india.herokuapp.com/"
+
 require("dotenv").config();
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -35,6 +39,7 @@ app.use("/sms", require("./routes/sms"));
 app.listen(process.env.PORT || 3000, () => {
   // script.get_data();
   // script.get_users();
+  wakeUpDyno(DYNO_URL);
   script.tasks.start();
   // script.send_msg();
 });
