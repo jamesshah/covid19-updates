@@ -5,7 +5,7 @@ const client = require("twilio")(process.env.ACC_SID, process.env.AUTH_TOKEN);
 const cron = require("node-cron");
 
 
-const tasks = cron.schedule("30 10,23 * * *", () => {
+const tasks = cron.schedule("32 4,15 * * *", () => {
   // get_users();
   // get_data();
   send_msg();
@@ -19,10 +19,10 @@ const send_msg = async () => {
   // console.log(cases_data);
 
   // Message For Gujarat Users
-  const gj_msg = `Total Cases In India: ${cases_data.total_cases} \n Total Cases In Gujarat: ${cases_data.gj_total} \n New Cases In India: ${cases_data.total_new} \n New Cases In Gujarat: ${cases_data.gj_new} \n #StayHome #StaySafe`;
+  const gj_msg = `Covid-19 Updates\nTotal Cases In India: ${cases_data.total_cases} \nTotal Cases In Gujarat: ${cases_data.gj_total} \nNew Cases In India: ${cases_data.total_new} \nNew Cases In Gujarat: ${cases_data.gj_new} \n #StayHome #StaySafe😊`;
 
   // Message For Maharashtra Users
-  const mh_msg = `Total Cases In India: ${cases_data.total_cases} \n Total Cases In Gujarat: ${cases_data.mh_total} \n New Cases In India: ${cases_data.total_new} \n New Cases In Gujarat: ${cases_data.mh_new} \n #StayHome #StaySafe`;
+  const mh_msg = `Covid-19 Updates\nTotal Cases In India: ${cases_data.total_cases} \nTotal Cases In Maharashtra: ${cases_data.mh_total} \nNew Cases In India: ${cases_data.total_new} \nNew Cases In Maharashtra: ${cases_data.mh_new} \n #StayHome #StaySafe😊`;
 
   // Sending Messages To Users In Gujarat
   users_num.GJ.forEach((user) => {
