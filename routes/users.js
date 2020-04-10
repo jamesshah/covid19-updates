@@ -41,7 +41,7 @@ router.post("/add_user", async (req, res) => {
       client.messages
         .create({
           body:
-            'Thank You For Registering. You will receive Corona-Virus updates everyday.\nTo Stop the service reply with "STOP"',
+            'Thank You For Registering. You will receive Corona-Virus updates everyday.\nTo Stop the service send "STOP" to +12018627450',
           from: process.env.PHN_NUM,
           to: "+91" + req.body.number,
         })
